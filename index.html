@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Cores Baseadas em Porcentagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        td {
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+
+        tr:hover td {
+            background-color: #e0e0e0;
+        }
+
+        .color-cell {
+            text-align: center;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .color-cell.low {
+            background-color: #ff4d4d; /* Vermelho para porcentagens baixas */
+        }
+
+        .color-cell.medium {
+            background-color: #ffcc00; /* Amarelo para porcentagens médias */
+        }
+
+        .color-cell.high {
+            background-color: #4CAF50; /* Verde para porcentagens altas */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Exemplo de Tabela com Cores Baseadas em Porcentagem</caption>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Porcentagem</th>
+                <th>Cor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3° Ano A</td>
+                <td class="color-cell" data-percentage="25">86,81%</td>
+                <td class="color-cell low">Baixo</td>
+            </tr>
+            <tr>
+                <td>3° Ano B</td>
+                <td class="color-cell" data-percentage="50">90,23%</td>
+                <td class="color-cell medium">Média</td>
+            </tr>
+            <tr>
+                <td>3° Ano A Tec.</td>
+                <td class="color-cell" data-percentage="75">95,64%</td>
+                <td class="color-cell high">Alta</td>
+            </tr>
+            <tr>
+                <td>2° Ano A</td>
+                <td class="color-cell" data-percentage="50">90,73%</td>
+                <td class="color-cell medium">Média</td>
+            </tr>
+            <tr>
+                <td>1° Ano A</td>
+                <td class="color-cell" data-percentage="25">89,94%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>1° Ano B</td>
+                <td class="color-cell" data-percentage="75">95,86%</td>
+                <td class="color-cell high">Alta</td>
+            </tr>
+            <tr>
+                <td>1° Ano C</td>
+                <td class="color-cell" data-percentage="25">89,64%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>9° Ano A</td>
+                <td class="color-cell" data-percentage="50">90,51%</td>
+                <td class="color-cell medium">Média</td>
+            </tr>
+            <tr>
+                <td>9° Ano B</td>
+                <td class="color-cell" data-percentage="75">96,46%</td>
+                <td class="color-cell high">Alta</td>
+            </tr>
+            <tr>
+                <td>9° Ano C</td>
+                <td class="color-cell" data-percentage="75">96,12%</td>
+                <td class="color-cell high">Alta</td>
+            </tr>
+            <tr>
+                <td>9° Ano D</td>
+                <td class="color-cell" data-percentage="25">85,25%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>8° Ano A</td>
+                <td class="color-cell" data-percentage="25">86,87%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>8° Ano B</td>
+                <td class="color-cell" data-percentage="25">83,28%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>8° Ano C</td>
+                <td class="color-cell" data-percentage="25">88,57%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>8° Ano D</td>
+                <td class="color-cell" data-percentage="25">84,09%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>7° Ano A</td>
+                <td class="color-cell" data-percentage="25">89,00%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>7° Ano B</td>
+                <td class="color-cell" data-percentage="50">94,75%</td>
+                <td class="color-cell medium">Média</td>
+            </tr>
+            <tr>
+                <td>7° Ano C</td>
+                <td class="color-cell" data-percentage="50">91,01%</td>
+                <td class="color-cell medium">Média</td>
+            </tr>
+            <tr>
+                <td>7° Ano D</td>
+                <td class="color-cell" data-percentage="50">93,55%</td>
+                <td class="color-cell medium">Média</td>
+            </tr>
+            <tr>
+                <td>6° Ano A</td>
+                <td class="color-cell" data-percentage="50">92,25%</td>
+                <td class="color-cell medium">Média</td>
+            </tr>
+            <tr>
+                <td>6° Ano B</td>
+                <td class="color-cell" data-percentage="25">88,89%</td>
+                <td class="color-cell low">Baixa</td>
+            </tr>
+            <tr>
+                <td>6° Ano C</td>
+                <td class="color-cell" data-percentage="75">95,82%</td>
+                <td class="color-cell high">Alta</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <script>
+        document.querySelectorAll('.color-cell[data-percentage]').forEach(cell => {
+            const percentage = parseInt(cell.getAttribute('data-percentage'), 10);
+            if (percentage <= 33) {
+                cell.classList.add('low');
+            } else if (percentage <= 66) {
+                cell.classList.add('medium');
+            } else {
+                cell.classList.add('high');
+            }
+        });
+    </script>
+</body>
+</html>
